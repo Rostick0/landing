@@ -48,9 +48,9 @@ export const projects: Project[] = [
     ],
     icon: '/images/projects/my-financier-app/icon.png',
     screenshots: [
-      '/images/projects/my-financier-app/screenshot-1.svg',
-      '/images/projects/my-financier-app/screenshot-2.svg',
-      '/images/projects/my-financier-app/screenshot-3.svg'
+      '/images/projects/my-financier-app/screenshot-1.png',
+      '/images/projects/my-financier-app/screenshot-2.png',
+      '/images/projects/my-financier-app/screenshot-3.png'
     ],
     flagship: true
   },
