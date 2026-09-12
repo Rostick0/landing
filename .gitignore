@@ -1,0 +1,21 @@
+# Nuxt dev/build outputs
+.nuxt
+.output
+.nitro
+.cache
+dist
+
+# Node
+node_modules
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor/OS
+.DS_Store
+*.log
+
+# PHP contact form secrets
+server-php/contact/config.php

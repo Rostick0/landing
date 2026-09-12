@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "title": "Rostislav Volkov — websites and Android apps, built end to end",
+    "description": "Full-stack developer: Nuxt 3 and Laravel websites, Flutter mobile apps. From idea and backend to publishing on RuStore and Google Play."
+  },
+  "seo": {
+    "siteName": "Rostislav Volkov",
+    "personJobTitle": "Full-stack developer and indie mobile app developer"
+  },
+  "nav": {
+    "work": "Work",
+    "stack": "Stack",
+    "process": "Process",
+    "services": "Services",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "header": {
+    "name": "Rostislav Volkov",
+    "role": "Web & Android developer"
+  },
+  "langSwitcher": {
+    "ariaLabel": "Switch interface language",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "hero": {
+    "eyebrow": "Rostislav Volkov — full-stack developer",
+    "title": "Websites and Android apps, built end to end and shipped to the stores",
+    "subtitle": "Laravel on the backend, Nuxt 3 and Next.js on the front end, Flutter for mobile — I take a product from idea and architecture through to release. I set up the servers myself and publish finished apps on RuStore and Google Play.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See the work",
+    "stat1Value": "6+",
+    "stat1Label": "shipped products",
+    "stat2Value": "Web + Android",
+    "stat2Label": "sites and apps from one developer",
+    "stat3Value": "RuStore · Google Play",
+    "stat3Label": "store releases"
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "The tools I build products with every day — from the backend to a store release.",
+    "groups": {
+      "backend": {
+        "title": "Backend",
+        "items": ["Laravel", "PHP"]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": ["Nuxt 3", "Next.js"]
+      },
+      "mobile": {
+        "title": "Mobile",
+        "items": ["Flutter"]
+      },
+      "infra": {
+        "title": "Infrastructure",
+        "items": ["PostgreSQL", "Redis", "RabbitMQ", "Docker", "nginx", "CI/CD"]
+      }
+    }
+  },
+  "work": {
+    "title": "Work",
+    "subtitle": "Web services and Android apps I designed, built, and shipped.",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "android": "Android"
+    },
+    "filterAriaLabel": "Filter work by type",
+    "badge": {
+      "web": "Web",
+      "android": "Android"
+    },
+    "screenshotAlt": "{name} screenshot",
+    "linksAriaLabel": "{name} links",
+    "stackAriaLabel": "{name} tech stack"
+  },
+  "projects": {
+    "my-financier-web": {
+      "name": "My Financier",
+      "description": "A personal finance web app: Nuxt 3 on the front end (SSR), a Laravel API, PostgreSQL and Redis underneath. It ships alongside a companion Android app, with data synced between web and mobile.",
+      "note": "Paired with a native Android app — My Financier for mobile.",
+      "highlights": [
+        "Nuxt 3 SSR front end, Laravel API backend",
+        "OAuth login, PostgreSQL, Redis",
+        "Tuned nginx: keepalive pools to upstream, WebSocket support, SSL session cache"
+      ]
+    },
+    "my-financier-app": {
+      "name": "My Financier",
+      "description": "A native Flutter companion to my-financier.ru, built offline-first — data lives locally and syncs back to the web account.",
+      "note": "Works together with the my-financier.ru web service.",
+      "highlights": [
+        "Offline-first: Riverpod + Drift",
+        "Routing with GoRouter",
+        "Syncs with the web account"
+      ]
+    },
+    "glidespark": {
+      "name": "GlideSpark (Парящая искра)",
+      "description": "A neon, one-tap space arcade. Instead of just a leaderboard, you race against 'ghosts' — recorded runs from other players on a track generated from a shared seed, so everyone gets the exact same layout.",
+      "highlights": [
+        "Ghost duels against other players' recorded runs",
+        "Seeded generation — you and the ghost race the same track",
+        "Global leaderboard and friend challenges; coins are cosmetic-only"
+      ]
+    },
+    "sudoku": {
+      "name": "Sudoku",
+      "description": "Classic sudoku with several difficulty levels and a fully offline mode.",
+      "note": "The only project in this portfolio published on both RuStore and Google Play.",
+      "highlights": [
+        "Several difficulty levels",
+        "Fully offline",
+        "Published on both RuStore and Google Play"
+      ]
+    },
+    "merge-city": {
+      "name": "Merge City (Слияние городов)",
+      "description": "A merge game on a 5×5 board with 9 progression levels and themed item sets.",
+      "highlights": [
+        "5×5 board, 9 progression levels",
+        "Coin-based economy",
+        "Themed sets: Space, Sea, Medieval"
+      ]
+    },
+    "riddles-puzzles": {
+      "name": "Riddles & Puzzles (Загадки и головоломки)",
+      "description": "A content-heavy app: hundreds of riddles across categories, rebus puzzles, daily challenges, and an achievement system.",
+      "highlights": [
+        "Hundreds of riddles across categories plus 90 rebus puzzles",
+        "Daily challenges and 25 achievements",
+        "JSON-driven content, rewarded-ad monetization"
+      ]
+    }
+  },
+  "process": {
+    "title": "How I work",
+    "subtitle": "Four steps from idea to a product you can maintain and grow.",
+    "step1": {
+      "title": "Discussion and estimate",
+      "description": "We define the task, goals and budget, and agree on the scope and timeline for the first iteration."
+    },
+    "step2": {
+      "title": "Prototype and architecture",
+      "description": "I design the data model and service architecture and put together a clickable interface prototype."
+    },
+    "step3": {
+      "title": "Development with interim demos",
+      "description": "I work in short iterations and show working builds at every stage."
+    },
+    "step4": {
+      "title": "Launch, support, analytics",
+      "description": "I set up the server and CI/CD, publish to the stores, wire up analytics, and stay on for support."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "I take on the whole build, or plug in at the stage you need.",
+    "item1": {
+      "title": "Website & landing pages",
+      "description": "Landing pages and business sites built on Nuxt: fast loading, SEO out of the box, fully responsive."
+    },
+    "item2": {
+      "title": "Web service with a user dashboard",
+      "description": "SaaS and internal tools with auth, roles and a personal account — a Laravel API paired with a Nuxt or Next.js front end."
+    },
+    "item3": {
+      "title": "Flutter app",
+      "description": "Android/iOS apps built with Flutter, from prototype through publishing on RuStore and Google Play."
+    },
+    "item4": {
+      "title": "APIs & integrations",
+      "description": "Designing and building REST/WebSocket APIs, plus integrations with third-party services and payment providers."
+    },
+    "item5": {
+      "title": "Server setup & release delivery",
+      "description": "nginx, Docker, CI/CD — I configure servers, automate deployment, and keep things stable after launch."
+    }
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "subtitle": "Describe the task and I'll reply with a time estimate and next step.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "How should I address you",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you{'@'}example.com",
+      "messageLabel": "Tell me about the project",
+      "messagePlaceholder": "What needs to be done, timeline, budget — whatever's useful",
+      "honeypotLabel": "Leave this field empty",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "successTitle": "Message sent",
+      "successBody": "I'll reply to your email within a day.",
+      "errorTitle": "Couldn't send that",
+      "errorBody": "Please try again, or email me directly.",
+      "errors": {
+        "nameRequired": "Enter your name",
+        "emailRequired": "Enter your email",
+        "emailInvalid": "Check the email format",
+        "messageRequired": "Describe the task",
+        "messageMinLength": "Add a bit more detail (10 characters minimum)"
+      }
+    },
+    "direct": {
+      "title": "Direct contacts",
+      "emailLabel": "Email",
+      "telegramLabel": "Telegram",
+      "linkedinLabel": "LinkedIn",
+      "kworkLabel": "Kwork"
+    }
+  },
+  "footer": {
+    "tagline": "Websites and Android apps, built end to end.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "backToTop": "Back to top",
+    "rights": "© {year} Rostislav Volkov. All rights reserved."
+  },
+  "common": {
+    "newTab": "opens in a new tab",
+    "skipToContent": "Skip to content"
+  }
+}

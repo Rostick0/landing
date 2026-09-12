@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" role="img" aria-label="My Financier">
+  <defs>
+    <linearGradient id="bg-my-financier-app-2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141728"/>
+      <stop offset="100%" stop-color="#06070f"/>
+    </linearGradient>
+    <radialGradient id="rg-my-financier-app-2" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#38d6f5" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#38d6f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#bg-my-financier-app-2)"/>
+  <rect width="390" height="844" fill="url(#rg-my-financier-app-2)"/>
+  <rect x="0" y="0" width="390" height="64" fill="#1c2138" fill-opacity="0.55"/>
+  <circle cx="34" cy="32" r="14" fill="none" stroke="#38d6f5" stroke-opacity="0.5" stroke-width="2"/>
+  <text x="60" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="600" fill="#5fe4fb">My Financier</text>
+  <rect x="5%" y="158" width="84%" height="59" rx="14" fill="#1c2138" stroke="#38d6f5" stroke-opacity="0.18"/>
+  <rect x="5%" y="284.8" width="87%" height="52" rx="14" fill="#1c2138" stroke="#38d6f5" stroke-opacity="0.18"/>
+  <rect x="5%" y="411.6" width="85%" height="57" rx="14" fill="#1c2138" stroke="#38d6f5" stroke-opacity="0.18"/>
+  <rect x="5%" y="538.4" width="82%" height="49" rx="14" fill="#1c2138" stroke="#38d6f5" stroke-opacity="0.18"/>
+  <rect x="5%" y="665.2" width="84%" height="67" rx="14" fill="#1c2138" stroke="#38d6f5" stroke-opacity="0.18"/>
+  <rect x="0.5" y="0.5" width="389" height="843" fill="none" stroke="#38d6f5" stroke-opacity="0.15"/>
+</svg>
