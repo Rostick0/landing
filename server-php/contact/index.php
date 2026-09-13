@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+ini_set('error_log', './contact-error.log');
+
 /**
  * Обработчик формы обратной связи: honeypot + rate limit + отправка письма
  * через произвольный SMTP-сервер напрямую сокетами, без Composer/библиотек.
@@ -15,7 +17,7 @@ declare(strict_types=1);
  * 3. Требуется PHP 7.4+ с расширением openssl.
  */
 
-$configPath = __DIR__ . '../config.php';
+$configPath = './config.php';
 if (!is_file($configPath)) {
     error_log('[contact] config.php не найден — скопируйте config.example.php и заполните его');
     http_response_code(500);
