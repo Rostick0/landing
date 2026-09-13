@@ -3,6 +3,13 @@ const { locale, locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 const availableLocales = computed(() => locales.value.map((l) => l.code))
+
+// switchLocalePath переносит текущий #hash (например, #top/#contact) в ссылку,
+// из-за чего смена языка неожиданно проматывает страницу к этому якорю.
+// Ссылка на другой язык должна вести на тот же путь без якоря.
+function localizedPath(code: string) {
+  return switchLocalePath(code).split('#')[0]
+}
 </script>
 
 <template>
@@ -14,7 +21,7 @@ const availableLocales = computed(() => locales.value.map((l) => l.code))
     <NuxtLink
       v-for="code in availableLocales"
       :key="code"
-      :to="switchLocalePath(code)"
+      :to="localizedPath(code)"
       class="rounded-full px-3 py-1 font-mono text-xs transition-colors duration-200"
       :class="
         locale === code

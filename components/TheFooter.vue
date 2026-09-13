@@ -20,8 +20,8 @@ const directLinks = computed(() => [
   {
     // TODO: подставить реальный юзернейм Telegram
     label: t('contact.direct.telegramLabel'),
-    value: '@your_telegram',
-    href: 'https://t.me/your_telegram'
+    value: '@MySuper5',
+    href: 'https://t.me/MySuper5'
   },
   {
     label: t('contact.direct.linkedinLabel'),

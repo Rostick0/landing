@@ -11,34 +11,42 @@ const stats = computed(() => [
 <template>
   <section id="top" class="relative overflow-hidden pt-20 sm:pt-28">
     <div class="container-page relative">
-      <p class="font-mono text-xs uppercase tracking-[0.2em] text-spark-300 motion-safe:animate-fade-up">
-        {{ t('hero.eyebrow') }}
-      </p>
+      <div class="lg:grid lg:grid-cols-[1fr_auto] lg:items-center lg:gap-12 xl:gap-20">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-spark-300 motion-safe:animate-fade-up">
+            {{ t('hero.eyebrow') }}
+          </p>
 
-      <h1
-        class="mt-5 max-w-3xl text-4xl leading-[1.1] sm:text-5xl lg:text-6xl motion-safe:animate-fade-up"
-        style="animation-delay: 60ms"
-      >
-        {{ t('hero.title') }}
-      </h1>
+          <h1
+            class="mt-5 max-w-3xl text-4xl leading-[1.1] sm:text-5xl lg:text-6xl motion-safe:animate-fade-up"
+            style="animation-delay: 60ms"
+          >
+            {{ t('hero.title') }}
+          </h1>
 
-      <p
-        class="mt-6 max-w-2xl text-base text-ink-200 sm:text-lg motion-safe:animate-fade-up"
-        style="animation-delay: 120ms"
-      >
-        {{ t('hero.subtitle') }}
-      </p>
+          <p
+            class="mt-6 max-w-2xl text-base text-ink-200 sm:text-lg motion-safe:animate-fade-up"
+            style="animation-delay: 120ms"
+          >
+            {{ t('hero.subtitle') }}
+          </p>
 
-      <div
-        class="mt-9 flex flex-col gap-3 sm:flex-row motion-safe:animate-fade-up"
-        style="animation-delay: 180ms"
-      >
-        <BaseButton as="a" href="#contact" variant="primary" size="lg">
-          {{ t('hero.ctaPrimary') }}
-        </BaseButton>
-        <BaseButton as="a" href="#work" variant="secondary" size="lg">
-          {{ t('hero.ctaSecondary') }}
-        </BaseButton>
+          <div
+            class="mt-9 flex flex-col gap-3 sm:flex-row motion-safe:animate-fade-up"
+            style="animation-delay: 180ms"
+          >
+            <BaseButton as="a" href="#contact" variant="primary" size="lg">
+              {{ t('hero.ctaPrimary') }}
+            </BaseButton>
+            <BaseButton as="a" href="#work" variant="secondary" size="lg">
+              {{ t('hero.ctaSecondary') }}
+            </BaseButton>
+          </div>
+        </div>
+
+        <div class="mt-12 flex justify-center motion-safe:animate-fade-up lg:mt-0 lg:justify-end" style="animation-delay: 240ms">
+          <PhoneMockup />
+        </div>
       </div>
 
       <div class="mt-16 grid grid-cols-1 gap-6 border-t border-ink-700/70 pt-8 sm:grid-cols-3 sm:gap-4">
