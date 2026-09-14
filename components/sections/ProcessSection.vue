@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const stepKeys = ['step1', 'step2', 'step3', 'step4'] as const
+const stepKeys = ['step1', 'step2', 'step3', 'step4', 'step5'] as const
 
 const steps = computed(() =>
   stepKeys.map((key, index) => ({
@@ -22,7 +22,7 @@ const steps = computed(() =>
         :subtitle="t('process.subtitle')"
       />
 
-      <ol class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <ol class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
         <li
           v-for="step in steps"
           :key="step.key"

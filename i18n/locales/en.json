@@ -1,24 +1,25 @@
 {
   "meta": {
-    "title": "Rostislav Volkov — websites and Android apps, built end to end",
-    "description": "Full-stack developer: Nuxt 3 and Laravel websites, Flutter mobile apps. From idea and backend to publishing on RuStore and Google Play."
+    "title": "Websites, web services & mobile apps — Rostislav Volkov",
+    "description": "I build websites, web services and mobile apps end to end — from idea and architecture through launch and support. Laravel on the backend, Nuxt 3 and Next.js on the front end, Flutter for mobile."
   },
   "seo": {
     "siteName": "Rostislav Volkov",
-    "personJobTitle": "Full-stack developer and indie mobile app developer"
+    "personJobTitle": "Digital product developer"
   },
   "nav": {
-    "work": "Work",
-    "stack": "Stack",
-    "process": "Process",
+    "ariaLabel": "Main navigation",
+    "home": "Home",
     "services": "Services",
+    "work": "Work",
+    "about": "About",
     "contact": "Contact",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
   },
   "header": {
     "name": "Rostislav Volkov",
-    "role": "Web & Android developer"
+    "role": "Digital product developer"
   },
   "langSwitcher": {
     "ariaLabel": "Switch interface language",
@@ -26,48 +27,139 @@
     "en": "EN"
   },
   "hero": {
-    "title": "Websites and Android apps, built end to end and shipped to the stores",
-    "subtitle": "Laravel on the backend, Nuxt 3 and Next.js on the front end, Flutter for mobile — I take a product from idea and architecture through to release. I set up the servers myself and publish finished apps on RuStore and Google Play.",
+    "eyebrow": "Web services · Mobile apps · APIs",
+    "title": "Websites, web services and mobile apps, built end to end",
+    "subtitle": "From idea and architecture to a finished product, launch and support. Laravel on the backend, Nuxt 3 and Next.js on the front end, Flutter for mobile — I run the whole product myself, from the first line of code to release.",
     "ctaPrimary": "Start a project",
     "ctaSecondary": "See the work",
     "stat1Value": "6+",
     "stat1Label": "shipped products",
-    "stat2Value": "Web + Android",
+    "stat2Value": "Web + Mobile",
     "stat2Label": "sites and apps from one developer",
     "stat3Value": "RuStore · Google Play",
-    "stat3Label": "store releases"
-  },
-  "stack": {
-    "title": "Stack",
-    "subtitle": "The tools I build products with every day — from the backend to a store release.",
-    "groups": {
-      "backend": {
-        "title": "Backend",
-        "items": ["Laravel", "PHP"]
-      },
-      "frontend": {
-        "title": "Frontend",
-        "items": ["Nuxt 3", "Next.js"]
-      },
-      "mobile": {
-        "title": "Mobile",
-        "items": ["Flutter"]
-      },
-      "infra": {
-        "title": "Infrastructure",
-        "items": ["PostgreSQL", "Redis", "RabbitMQ", "Docker", "nginx", "CI/CD"]
-      }
+    "stat3Label": "store releases",
+    "mockup": {
+      "webAlt": "Web version of the My Financier service",
+      "appAlt": "My Financier Android app"
     }
   },
-  "work": {
-    "title": "Work",
-    "subtitle": "Web services and Android apps I designed, built, and shipped.",
+  "capabilities": {
+    "title": "What I can build",
+    "subtitle": "I take on the whole build — from idea and architecture through launch — or plug in at the stage you need.",
+    "item1": {
+      "title": "Business website",
+      "description": "Landing pages and business sites built on Nuxt: fast loading, SEO out of the box, fully responsive on any screen."
+    },
+    "item2": {
+      "title": "Web service",
+      "description": "Services with a real backend, database and business logic behind them — the same way my-financier.ru is built."
+    },
+    "item3": {
+      "title": "Mobile app",
+      "description": "Android apps built with Flutter for businesses, services and my own products — from prototype through publishing on RuStore and Google Play."
+    },
+    "item4": {
+      "title": "User dashboard",
+      "description": "Auth, roles and personal data — a dashboard people can comfortably use every day, on Laravel with Nuxt or Next.js."
+    },
+    "item5": {
+      "title": "APIs & integrations",
+      "description": "REST and WebSocket APIs, integrations with third-party services — from endpoint design to running in production."
+    },
+    "item6": {
+      "title": "Product MVP",
+      "description": "I build a first version fast, so an idea can be tested on real users — then grow whatever proves out."
+    }
+  },
+  "cases": {
+    "title": "Featured case",
+    "subtitle": "A product that shows the full cycle: architecture, backend, database, mobile app and production infrastructure.",
+    "flagship": {
+      "name": "My Financier",
+      "summary": "A personal finance service: a web app and an Android app sharing the same data.",
+      "webBadge": "Web service",
+      "appBadge": "Android app",
+      "taskLabel": "Task",
+      "task": "Design and build a personal finance service from scratch: a web version with a real backend, plus an Android app that works offline and syncs with the web account.",
+      "solutionLabel": "Solution",
+      "solution": "Built a Laravel API and an SSR Nuxt 3 front end for the web version, plus a native Flutter app with an offline-first architecture. Designed the data model, auth and server infrastructure myself.",
+      "featuresLabel": "What's inside",
+      "features": [
+        "Nuxt 3 SSR front end, Laravel API backend",
+        "OAuth login, PostgreSQL, Redis",
+        "Offline-first Android app: Riverpod, Drift, GoRouter",
+        "Data sync between the web account and the app",
+        "Tuned nginx: keepalive pools to upstream, WebSocket support, SSL session cache"
+      ],
+      "resultLabel": "Result",
+      "result": "A working product made of two connected clients — web and Android — that's usable every day: my-financier.ru in the browser, and the My Financier app on RuStore.",
+      "stackLabel": "Stack",
+      "webCta": "Open my-financier.ru",
+      "appCta": "App on RuStore",
+      "moreProducts": "More projects in the \"Own products\" section below"
+    }
+  },
+  "trust": {
+    "title": "Why people trust me with development",
+    "subtitle": "Specific things I can do and have already done in practice.",
+    "item1": {
+      "title": "One developer covers backend, frontend and mobile",
+      "description": "No need to assemble a team or sync several contractors: backend on Laravel, front end on Nuxt or Next.js, and a mobile app on Flutter — I build it all myself, under one consistent architecture."
+    },
+    "item2": {
+      "title": "Production experience with auth and databases",
+      "description": "OAuth login, PostgreSQL and Redis in a running service, not a learning project."
+    },
+    "item3": {
+      "title": "I configure the infrastructure myself",
+      "description": "Tuned nginx: keepalive pools to upstream, WebSocket support, SSL session cache — I take the server to production, not just the code."
+    },
+    "item4": {
+      "title": "Offline-first mobile architecture",
+      "description": "Apps that work without a connection and sync data once it's back: Riverpod, Drift, GoRouter."
+    },
+    "item5": {
+      "title": "Store publishing and follow-through",
+      "description": "I carry a release all the way to RuStore and Google Play, and stay reachable after it ships."
+    },
+    "item6": {
+      "title": "I can join at any stage",
+      "description": "Ready to run a project from idea to launch end to end, or join development already in progress — extend a backend, add a mobile app, or work through someone else's code."
+    }
+  },
+  "process": {
+    "title": "How the work goes",
+    "subtitle": "You don't need a detailed spec upfront. Describe the idea and the task — together we'll define what the first version needs.",
+    "step1": {
+      "title": "We discuss the task",
+      "description": "We define the idea, goals and budget, and agree on the scope and timeline for the first iteration."
+    },
+    "step2": {
+      "title": "We design the solution",
+      "description": "I design the architecture and data model and put together an interface prototype, so the outcome is clear before development starts."
+    },
+    "step3": {
+      "title": "We build",
+      "description": "I work in short iterations and show working builds at every stage, not just once at the end."
+    },
+    "step4": {
+      "title": "We test and launch",
+      "description": "I check real usage scenarios, set up the server and CI/CD, and publish the site or app to the stores."
+    },
+    "step5": {
+      "title": "We support and grow it",
+      "description": "I stay reachable after launch: watching stability, wiring up analytics, and growing the product further."
+    }
+  },
+  "products": {
+    "title": "Own products",
+    "subtitle": "Besides client work, I come up with, launch and grow my own apps — from a finance service to games on the app stores.",
     "filters": {
       "all": "All",
       "web": "Web",
       "android": "Android"
     },
-    "filterAriaLabel": "Filter work by type",
+    "filterAriaLabel": "Filter projects by type",
     "badge": {
       "web": "Web",
       "android": "Android"
@@ -135,53 +227,59 @@
       ]
     }
   },
-  "process": {
-    "title": "How I work",
-    "subtitle": "Four steps from idea to a product you can maintain and grow.",
-    "step1": {
-      "title": "Discussion and estimate",
-      "description": "We define the task, goals and budget, and agree on the scope and timeline for the first iteration."
-    },
-    "step2": {
-      "title": "Prototype and architecture",
-      "description": "I design the data model and service architecture and put together a clickable interface prototype."
-    },
-    "step3": {
-      "title": "Development with interim demos",
-      "description": "I work in short iterations and show working builds at every stage."
-    },
-    "step4": {
-      "title": "Launch, support, analytics",
-      "description": "I set up the server and CI/CD, publish to the stores, wire up analytics, and stay on for support."
+  "stack": {
+    "title": "Stack",
+    "subtitle": "The tools I build products with — from the backend to a store release.",
+    "groups": {
+      "backend": {
+        "title": "Backend",
+        "items": ["PHP", "Laravel"]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": ["Nuxt 3", "Next.js"]
+      },
+      "mobile": {
+        "title": "Mobile",
+        "items": ["Flutter", "Riverpod", "Drift", "GoRouter"]
+      },
+      "infra": {
+        "title": "Data & infrastructure",
+        "items": ["PostgreSQL", "Redis", "RabbitMQ", "Docker", "nginx", "CI/CD"]
+      }
     }
   },
-  "services": {
-    "title": "Services",
-    "subtitle": "I take on the whole build, or plug in at the stage you need.",
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "What people usually ask before starting a project.",
     "item1": {
-      "title": "Website & landing pages",
-      "description": "Landing pages and business sites built on Nuxt: fast loading, SEO out of the box, fully responsive."
+      "question": "Can I reach out with just an idea, no spec?",
+      "answer": "Yes. Describe the task in your own words — together we'll work out what the first version needs, and I'll propose an approach."
     },
     "item2": {
-      "title": "Web service with a user dashboard",
-      "description": "SaaS and internal tools with auth, roles and a personal account — a Laravel API paired with a Nuxt or Next.js front end."
+      "question": "Can I hire you for just the backend or just an API?",
+      "answer": "Yes, you can bring me in at any stage: backend only, APIs and integrations only, or work on one specific part of an existing project."
     },
     "item3": {
-      "title": "Flutter app",
-      "description": "Android/iOS apps built with Flutter, from prototype through publishing on RuStore and Google Play."
+      "question": "Can you extend a project that already exists?",
+      "answer": "Yes. I'll get familiar with the existing code and architecture and continue from there — no need to start from zero."
     },
     "item4": {
-      "title": "APIs & integrations",
-      "description": "Designing and building REST/WebSocket APIs, plus integrations with third-party services and payment providers."
+      "question": "Do you build mobile apps?",
+      "answer": "Yes, with Flutter. I publish apps on RuStore and Google Play — the whole way from prototype to release."
     },
     "item5": {
-      "title": "Server setup & release delivery",
-      "description": "nginx, Docker, CI/CD — I configure servers, automate deployment, and keep things stable after launch."
+      "question": "Can you keep supporting the product after launch?",
+      "answer": "Yes, I stay reachable after release: fixing issues, extending functionality, and watching server stability."
+    },
+    "item6": {
+      "question": "How is the price worked out?",
+      "answer": "It depends on the scope. After we discuss the project I'll propose an approach along with a timeline and cost estimate for the first iteration."
     }
   },
   "contact": {
-    "title": "Let's talk about your project",
-    "subtitle": "Describe the task and I'll reply with a time estimate and next step.",
+    "title": "Have an idea or a task? Let's talk about it.",
+    "subtitle": "Describe the project in a few sentences and I'll reply with the best way to build it.",
     "form": {
       "nameLabel": "Name",
       "namePlaceholder": "How should I address you",
@@ -213,7 +311,7 @@
     }
   },
   "footer": {
-    "tagline": "Websites and Android apps, built end to end.",
+    "tagline": "Websites, web services and mobile apps, built end to end.",
     "navTitle": "Navigation",
     "contactTitle": "Contact",
     "backToTop": "Back to top",

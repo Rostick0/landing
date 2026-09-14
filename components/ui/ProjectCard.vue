@@ -35,7 +35,7 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
       <div class="min-w-0">
         <h3 class="truncate text-lg text-white">{{ name }}</h3>
         <TagPill
-          :label="t(`work.badge.${project.type}`)"
+          :label="t(`products.badge.${project.type}`)"
           variant="accent"
           class="mt-1"
         />
@@ -45,13 +45,13 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
     <div class="flex flex-1 flex-col gap-5 p-6">
       <div
         class="flex snap-x gap-3 overflow-x-auto pb-1"
-        :aria-label="t('work.screenshotAlt', { name })"
+        :aria-label="t('products.screenshotAlt', { name })"
       >
         <NuxtImg
           v-for="(shot, index) in project.screenshots"
           :key="shot"
           :src="shot"
-          :alt="t('work.screenshotAlt', { name })"
+          :alt="t('products.screenshotAlt', { name })"
           loading="lazy"
           class="h-32 w-auto flex-shrink-0 snap-start rounded-lg border border-ink-600/60 object-cover"
           :class="project.type === 'android' ? 'aspect-[9/16]' : 'aspect-[16/10]'"
@@ -74,11 +74,11 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
         </li>
       </ul>
 
-      <div class="flex flex-wrap gap-2" :aria-label="t('work.stackAriaLabel', { name })">
+      <div class="flex flex-wrap gap-2" :aria-label="t('products.stackAriaLabel', { name })">
         <TagPill v-for="tech in project.stack" :key="tech" :label="tech" />
       </div>
 
-      <div class="mt-auto flex flex-wrap gap-2 pt-1" :aria-label="t('work.linksAriaLabel', { name })">
+      <div class="mt-auto flex flex-wrap gap-2 pt-1" :aria-label="t('products.linksAriaLabel', { name })">
         <BaseButton
           v-for="link in project.links"
           :key="link.url"

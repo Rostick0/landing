@@ -63,18 +63,20 @@ async function onSubmit() {
   }
 }
 
-const directLinks = computed(() => [
+const primaryLinks = computed(() => [
   {
     label: t('contact.direct.emailLabel'),
     value: 'support@games-for-everyone.ru',
     href: 'mailto:support@games-for-everyone.ru'
   },
   {
-    // TODO: подставить реальный юзернейм Telegram
     label: t('contact.direct.telegramLabel'),
     value: '@MySuper5',
     href: 'https://t.me/MySuper5'
-  },
+  }
+])
+
+const secondaryLinks = computed(() => [
   {
     label: t('contact.direct.linkedinLabel'),
     value: 'linkedin.com/in/rostislav-volkov-a00379382',
@@ -181,16 +183,31 @@ const directLinks = computed(() => [
           <h3 class="text-sm font-semibold text-ink-400">
             {{ t('contact.direct.title') }}
           </h3>
-          <ul class="mt-4 space-y-4">
-            <li v-for="link in directLinks" :key="link.label">
+
+          <ul class="mt-4 space-y-3">
+            <li v-for="link in primaryLinks" :key="link.label">
               <a
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="surface-card flex flex-col rounded-xl px-4 py-3 text-sm"
+                class="surface-card flex flex-col rounded-xl px-5 py-4 text-base transition-transform duration-200 hover:-translate-y-0.5"
               >
-                <span class="text-ink-400">{{ link.label }}</span>
-                <span class="text-white">{{ link.value }}</span>
+                <span class="text-xs text-spark-300">{{ link.label }}</span>
+                <span class="mt-0.5 font-medium text-white">{{ link.value }}</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mt-3 space-y-2">
+            <li v-for="link in secondaryLinks" :key="link.label">
+              <a
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-between gap-3 rounded-xl border border-ink-700/70 px-4 py-2.5 text-sm text-ink-300 hover:border-ink-500/70 hover:text-white"
+              >
+                <span class="text-ink-500">{{ link.label }}</span>
+                <span class="truncate">{{ link.value }}</span>
               </a>
             </li>
           </ul>

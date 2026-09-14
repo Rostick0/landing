@@ -16,19 +16,19 @@ const filteredProjects = computed(() =>
 </script>
 
 <template>
-  <section id="work" class="section-padding" aria-labelledby="work-heading">
+  <section id="products" class="section-padding" aria-labelledby="products-heading">
     <div class="container-page">
       <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <SectionTitle
-          heading-id="work-heading"
-          :title="t('work.title')"
-          :subtitle="t('work.subtitle')"
+          heading-id="products-heading"
+          :title="t('products.title')"
+          :subtitle="t('products.subtitle')"
         />
 
         <div
           class="inline-flex w-fit items-center gap-1 rounded-full bg-ink-800/70 p-1"
           role="group"
-          :aria-label="t('work.filterAriaLabel')"
+          :aria-label="t('products.filterAriaLabel')"
         >
           <button
             v-for="key in filterKeys"
@@ -43,7 +43,7 @@ const filteredProjects = computed(() =>
             :aria-pressed="activeFilter === key"
             @click="activeFilter = key"
           >
-            {{ t(`work.filters.${key}`) }}
+            {{ t(`products.filters.${key}`) }}
           </button>
         </div>
       </div>

@@ -64,10 +64,18 @@
   }
 
   .surface-card {
-    @apply bg-ink-800/70 transition-colors duration-300;
+    @apply relative bg-ink-800/60 border border-white/[0.06] transition-all duration-300;
   }
 
   .surface-card:hover {
-    @apply bg-ink-750/80;
+    @apply bg-ink-750/70 border-white/[0.12];
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-spark-200 via-spark-300 to-spark-400 bg-clip-text text-transparent;
+  }
+
+  .bg-orb {
+    @apply pointer-events-none absolute rounded-full opacity-40 blur-3xl;
   }
 }

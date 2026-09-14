@@ -33,7 +33,7 @@ const jsonLd = computed(() => {
 
   const itemList = {
     '@type': 'ItemList',
-    name: t('work.title'),
+    name: t('products.title'),
     itemListElement: projects.map((project, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -69,10 +69,13 @@ useHead({
 <template>
   <div>
     <HeroSection />
-    <StackSection />
-    <WorkSection />
+    <CapabilitiesSection />
+    <CasesSection />
+    <TrustSection />
     <ProcessSection />
-    <ServicesSection />
+    <OwnProductsSection />
+    <StackSection />
+    <FaqSection />
     <ContactSection />
   </div>
 </template>

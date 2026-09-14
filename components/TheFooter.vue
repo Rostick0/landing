@@ -4,10 +4,9 @@ const { t } = useI18n()
 const year = new Date().getFullYear()
 
 const navItems = computed(() => [
-  { href: '#work', label: t('nav.work') },
-  { href: '#stack', label: t('nav.stack') },
-  { href: '#process', label: t('nav.process') },
   { href: '#services', label: t('nav.services') },
+  { href: '#work', label: t('nav.work') },
+  { href: '#about', label: t('nav.about') },
   { href: '#contact', label: t('nav.contact') }
 ])
 

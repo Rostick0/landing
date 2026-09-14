@@ -4,10 +4,10 @@ const { t } = useI18n()
 const mobileOpen = ref(false)
 
 const navItems = computed(() => [
-  { href: '#work', label: t('nav.work') },
-  { href: '#stack', label: t('nav.stack') },
-  { href: '#process', label: t('nav.process') },
+  { href: '#top', label: t('nav.home') },
   { href: '#services', label: t('nav.services') },
+  { href: '#work', label: t('nav.work') },
+  { href: '#about', label: t('nav.about') },
   { href: '#contact', label: t('nav.contact') }
 ])
 
@@ -28,7 +28,7 @@ onKeyStroke('Escape', () => {
         <span class="text-xs text-ink-300">{{ t('header.role') }}</span>
       </a>
 
-      <nav class="hidden items-center gap-6 md:flex" :aria-label="t('nav.work')">
+      <nav class="hidden items-center gap-6 md:flex" :aria-label="t('nav.ariaLabel')">
         <a
           v-for="item in navItems"
           :key="item.href"
