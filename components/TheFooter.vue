@@ -54,10 +54,10 @@ const directLinks = computed(() => [
       </div>
 
       <nav :aria-label="t('footer.navTitle')">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
+        <p class="text-sm font-semibold text-ink-400">
           {{ t('footer.navTitle') }}
         </p>
-        <ul class="mt-4 space-y-2">
+        <ul class="mt-4 space-y-3">
           <li v-for="item in navItems" :key="item.href">
             <a :href="item.href" class="text-sm text-ink-300 hover:text-white">{{ item.label }}</a>
           </li>
@@ -65,10 +65,10 @@ const directLinks = computed(() => [
       </nav>
 
       <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
+        <p class="text-sm font-semibold text-ink-400">
           {{ t('footer.contactTitle') }}
         </p>
-        <ul class="mt-4 space-y-2">
+        <ul class="mt-4 space-y-3">
           <li v-for="link in directLinks" :key="link.label">
             <a
               :href="link.href"

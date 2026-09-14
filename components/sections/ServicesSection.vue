@@ -17,19 +17,18 @@ const items = computed(() =>
     <div class="container-page">
       <SectionTitle
         heading-id="services-heading"
-        :eyebrow="t('nav.services')"
         :title="t('services.title')"
         :subtitle="t('services.subtitle')"
       />
 
-      <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="item in items"
           :key="item.key"
-          class="glow-border rounded-2xl bg-ink-800/50 p-6"
+          class="surface-card rounded-2xl p-7"
         >
           <h3 class="text-lg text-white">{{ item.title }}</h3>
-          <p class="mt-2 text-sm text-ink-200">{{ item.description }}</p>
+          <p class="mt-2 text-sm leading-relaxed text-ink-200">{{ item.description }}</p>
         </div>
       </div>
     </div>

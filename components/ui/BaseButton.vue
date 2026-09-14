@@ -30,8 +30,8 @@ const props = withDefaults(
 )
 
 const variantClasses: Record<Variant, string> = {
-  primary: 'bg-spark-400 text-ink-900 hover:bg-spark-300 shadow-glow hover:shadow-glow-lg',
-  secondary: 'bg-transparent text-ink-100 border border-ink-400/70 hover:border-spark-400/70 hover:text-white',
+  primary: 'bg-spark-400 text-ink-900 hover:bg-spark-300 hover:-translate-y-0.5',
+  secondary: 'bg-ink-700/70 text-ink-100 hover:bg-ink-600/80 hover:text-white',
   ghost: 'bg-transparent text-ink-200 hover:text-white hover:bg-ink-700/60'
 }
 

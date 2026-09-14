@@ -13,27 +13,22 @@ const stats = computed(() => [
     <div class="container-page relative">
       <div class="lg:grid lg:grid-cols-[1fr_auto] lg:items-center lg:gap-12 xl:gap-20">
         <div>
-          <p class="font-mono text-xs uppercase tracking-[0.2em] text-spark-300 motion-safe:animate-fade-up">
-            {{ t('hero.eyebrow') }}
-          </p>
-
           <h1
-            class="mt-5 max-w-3xl text-4xl leading-[1.1] sm:text-5xl lg:text-6xl motion-safe:animate-fade-up"
-            style="animation-delay: 60ms"
+            class="max-w-3xl text-4xl leading-[1.1] sm:text-5xl lg:text-6xl motion-safe:animate-fade-up"
           >
             {{ t('hero.title') }}
           </h1>
 
           <p
-            class="mt-6 max-w-2xl text-base text-ink-200 sm:text-lg motion-safe:animate-fade-up"
-            style="animation-delay: 120ms"
+            class="mt-7 max-w-2xl text-base leading-relaxed text-ink-200 sm:text-lg motion-safe:animate-fade-up"
+            style="animation-delay: 80ms"
           >
             {{ t('hero.subtitle') }}
           </p>
 
           <div
             class="mt-9 flex flex-col gap-3 sm:flex-row motion-safe:animate-fade-up"
-            style="animation-delay: 180ms"
+            style="animation-delay: 160ms"
           >
             <BaseButton as="a" href="#contact" variant="primary" size="lg">
               {{ t('hero.ctaPrimary') }}

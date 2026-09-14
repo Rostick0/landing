@@ -93,13 +93,12 @@ const directLinks = computed(() => [
     <div class="container-page">
       <SectionTitle
         heading-id="contact-heading"
-        :eyebrow="t('nav.contact')"
         :title="t('contact.title')"
         :subtitle="t('contact.subtitle')"
       />
 
-      <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr]">
-        <form novalidate class="glow-border rounded-2xl bg-ink-800/50 p-6 sm:p-8" @submit.prevent="onSubmit">
+      <div class="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr]">
+        <form novalidate class="surface-card rounded-2xl p-6 sm:p-8" @submit.prevent="onSubmit">
           <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div class="sm:col-span-1">
               <label for="contact-name" class="text-sm text-ink-200">{{ t('contact.form.nameLabel') }}</label>
@@ -179,16 +178,16 @@ const directLinks = computed(() => [
         </form>
 
         <div>
-          <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-ink-400">
+          <h3 class="text-sm font-semibold text-ink-400">
             {{ t('contact.direct.title') }}
           </h3>
-          <ul class="mt-4 space-y-3">
+          <ul class="mt-4 space-y-4">
             <li v-for="link in directLinks" :key="link.label">
               <a
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="glow-border flex flex-col rounded-xl bg-ink-800/50 px-4 py-3 text-sm"
+                class="surface-card flex flex-col rounded-xl px-4 py-3 text-sm"
               >
                 <span class="text-ink-400">{{ link.label }}</span>
                 <span class="text-white">{{ link.value }}</span>

@@ -26,7 +26,6 @@
     "en": "EN"
   },
   "hero": {
-    "eyebrow": "Rostislav Volkov — full-stack developer",
     "title": "Websites and Android apps, built end to end and shipped to the stores",
     "subtitle": "Laravel on the backend, Nuxt 3 and Next.js on the front end, Flutter for mobile — I take a product from idea and architecture through to release. I set up the servers myself and publish finished apps on RuStore and Google Play.",
     "ctaPrimary": "Start a project",

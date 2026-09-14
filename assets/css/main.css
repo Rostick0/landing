@@ -13,12 +13,8 @@
 
   body {
     @apply bg-ink-900 text-ink-100 font-sans antialiased;
-    background-image:
-      radial-gradient(60% 50% at 50% -10%, rgba(56, 214, 245, 0.16) 0%, rgba(56, 214, 245, 0) 65%),
-      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size: auto, 48px 48px, 48px 48px;
-    background-position: center, center, center;
+    background-image: radial-gradient(60% 50% at 50% -10%, rgba(56, 214, 245, 0.14) 0%, rgba(56, 214, 245, 0) 65%);
+    background-position: center;
   }
 
   ::selection {
@@ -29,7 +25,7 @@
   h2,
   h3,
   h4 {
-    @apply font-semibold tracking-tight text-white;
+    @apply font-display font-semibold tracking-tight text-white;
   }
 
   a {
@@ -67,11 +63,11 @@
     @apply py-20 sm:py-28;
   }
 
-  .glow-border {
-    @apply border border-ink-500/60 transition-all duration-300;
+  .surface-card {
+    @apply bg-ink-800/70 transition-colors duration-300;
   }
 
-  .glow-border:hover {
-    @apply border-spark-400/60 shadow-glow;
+  .surface-card:hover {
+    @apply bg-ink-750/80;
   }
 }

@@ -3,7 +3,7 @@
 <template>
   <div class="relative mx-auto w-[230px] shrink-0 rotate-3 transition-transform duration-500 hover:rotate-0 sm:w-[260px]" aria-hidden="true">
     <!-- Device frame -->
-    <div class="relative rounded-[2.6rem] border border-ink-500/60 bg-gradient-to-b from-ink-600 to-ink-800 p-[10px] shadow-glow-lg">
+    <div class="relative rounded-[2.6rem] border border-ink-500/60 bg-gradient-to-b from-ink-600 to-ink-800 p-[10px] shadow-card">
       <!-- Side buttons -->
       <span class="absolute -left-[6px] top-24 h-8 w-[5px] rounded-l-full bg-ink-300/90 shadow-[-1px_1px_2px_rgba(0,0,0,0.45)] sm:top-28" />
       <span class="absolute -left-[6px] top-36 h-12 w-[5px] rounded-l-full bg-ink-300/90 shadow-[-1px_1px_2px_rgba(0,0,0,0.45)] sm:top-40" />

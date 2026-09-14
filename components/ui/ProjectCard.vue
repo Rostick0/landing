@@ -21,9 +21,9 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
 
 <template>
   <article
-    class="glow-border group flex h-full flex-col overflow-hidden rounded-2xl bg-ink-800/60 shadow-card transition-transform duration-300 hover:-translate-y-1"
+    class="surface-card group flex h-full flex-col overflow-hidden rounded-2xl shadow-card transition-transform duration-300 hover:-translate-y-1"
   >
-    <div class="flex items-center gap-4 border-b border-ink-600/60 p-5">
+    <div class="flex items-center gap-4 border-b border-ink-600/60 p-6">
       <NuxtImg
         :src="project.icon"
         :alt="name"
@@ -42,7 +42,7 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
       </div>
     </div>
 
-    <div class="flex flex-1 flex-col gap-4 p-5">
+    <div class="flex flex-1 flex-col gap-5 p-6">
       <div
         class="flex snap-x gap-3 overflow-x-auto pb-1"
         :aria-label="t('work.screenshotAlt', { name })"
@@ -61,15 +61,15 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
         />
       </div>
 
-      <p class="text-sm text-ink-200">{{ description }}</p>
+      <p class="text-sm leading-relaxed text-ink-200">{{ description }}</p>
 
-      <p v-if="hasNote" class="rounded-lg border border-spark-400/30 bg-spark-400/5 px-3 py-2 text-xs text-spark-200">
+      <p v-if="hasNote" class="rounded-lg bg-spark-400/5 px-3 py-2 text-xs text-spark-200">
         {{ note }}
       </p>
 
-      <ul class="space-y-1.5 text-sm text-ink-200">
-        <li v-for="item in highlights" :key="item" class="flex gap-2">
-          <span class="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-spark-400" aria-hidden="true" />
+      <ul class="space-y-2 text-sm text-ink-200">
+        <li v-for="item in highlights" :key="item" class="flex gap-2.5">
+          <span class="mt-2.5 h-px w-3 flex-shrink-0 bg-ink-500" aria-hidden="true" />
           <span>{{ item }}</span>
         </li>
       </ul>
@@ -78,7 +78,7 @@ const highlights = computed(() => tm(`${base.value}.highlights`).map((item) => r
         <TagPill v-for="tech in project.stack" :key="tech" :label="tech" />
       </div>
 
-      <div class="mt-auto flex flex-wrap gap-2 pt-2" :aria-label="t('work.linksAriaLabel', { name })">
+      <div class="mt-auto flex flex-wrap gap-2 pt-1" :aria-label="t('work.linksAriaLabel', { name })">
         <BaseButton
           v-for="link in project.links"
           :key="link.url"

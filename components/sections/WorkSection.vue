@@ -21,13 +21,12 @@ const filteredProjects = computed(() =>
       <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <SectionTitle
           heading-id="work-heading"
-          :eyebrow="t('nav.work')"
           :title="t('work.title')"
           :subtitle="t('work.subtitle')"
         />
 
         <div
-          class="inline-flex w-fit items-center gap-1 rounded-full border border-ink-500/60 p-1"
+          class="inline-flex w-fit items-center gap-1 rounded-full bg-ink-800/70 p-1"
           role="group"
           :aria-label="t('work.filterAriaLabel')"
         >
@@ -49,7 +48,7 @@ const filteredProjects = computed(() =>
         </div>
       </div>
 
-      <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
       </div>
     </div>

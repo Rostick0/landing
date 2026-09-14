@@ -3,9 +3,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    '@nuxt/fonts',
     '@vueuse/nuxt',
     '@nuxtjs/i18n'
   ],
+
+  fonts: {
+    families: [{ name: 'Fraunces', provider: 'google', weights: [500, 600, 700], styles: ['normal'] }]
+  },
 
   devtools: { enabled: true },
   compatibilityDate: '2025-01-01',

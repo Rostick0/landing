@@ -52,6 +52,7 @@ export default <Partial<Config>>{
           'Arial',
           'sans-serif'
         ],
+        display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
         mono: [
           'ui-monospace',
           'SFMono-Regular',
@@ -62,30 +63,15 @@ export default <Partial<Config>>{
         ]
       },
       boxShadow: {
-        glow: '0 0 0 1px rgba(56, 214, 245, 0.25), 0 0 24px 0 rgba(56, 214, 245, 0.18)',
-        'glow-lg': '0 0 0 1px rgba(56, 214, 245, 0.3), 0 0 60px 0 rgba(56, 214, 245, 0.22)',
         card: '0 1px 0 0 rgba(255,255,255,0.04) inset, 0 20px 40px -24px rgba(0,0,0,0.6)'
       },
-      backgroundImage: {
-        'radial-fade': 'radial-gradient(60% 60% at 50% 0%, rgba(56, 214, 245, 0.14) 0%, rgba(56, 214, 245, 0) 60%)',
-        'grid-lines':
-          'linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px)'
-      },
-      backgroundSize: {
-        grid: '48px 48px'
-      },
       animation: {
-        'fade-up': 'fade-up 0.6s ease-out both',
-        'pulse-glow': 'pulse-glow 3.2s ease-in-out infinite'
+        'fade-up': 'fade-up 0.6s ease-out both'
       },
       keyframes: {
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(12px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' }
-        },
-        'pulse-glow': {
-          '0%, 100%': { opacity: '0.55' },
-          '50%': { opacity: '1' }
         }
       }
     }
