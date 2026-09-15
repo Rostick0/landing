@@ -70,12 +70,12 @@ useHead({
   <div>
     <HeroSection />
     <CapabilitiesSection />
-    <CasesSection />
-    <TrustSection />
-    <ProcessSection />
-    <OwnProductsSection />
-    <StackSection />
-    <FaqSection />
-    <ContactSection />
+    <LazyCasesSection hydrate-on-visible />
+    <LazyTrustSection hydrate-on-visible />
+    <LazyProcessSection hydrate-on-visible />
+    <LazyOwnProductsSection hydrate-on-visible />
+    <LazyStackSection hydrate-on-visible />
+    <LazyFaqSection hydrate-on-visible />
+    <LazyContactSection hydrate-on-visible />
   </div>
 </template>

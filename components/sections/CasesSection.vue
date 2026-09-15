@@ -13,9 +13,12 @@ const appProject = projects.find((p) => p.id === 'my-financier-app')!
 const stack = computed(() => Array.from(new Set([...webProject.stack, ...appProject.stack])))
 const features = computed(() => tm('cases.flagship.features').map((item) => rt(item as string)))
 
+// Explicit width/height let NuxtImg (ipxStatic) resize+convert at build
+// time — the gallery renders at a fixed h-28 (112px), matched here by
+// aspect ratio so the browser gets a correctly sized WebP, not the source.
 const galleryShots = computed(() => [
-  ...webProject.screenshots.slice(1),
-  ...appProject.screenshots.slice(1)
+  ...webProject.screenshots.slice(1).map((src) => ({ src, width: 180, height: 112 })),
+  ...appProject.screenshots.slice(1).map((src) => ({ src, width: 63, height: 112 }))
 ])
 </script>
 
@@ -73,8 +76,10 @@ const galleryShots = computed(() => [
         <div class="mt-6 flex gap-3 overflow-x-auto pb-1" :aria-label="t('products.screenshotAlt', { name: t('cases.flagship.name') })">
           <NuxtImg
             v-for="shot in galleryShots"
-            :key="shot"
-            :src="shot"
+            :key="shot.src"
+            :src="shot.src"
+            :width="shot.width"
+            :height="shot.height"
             :alt="t('products.screenshotAlt', { name: t('cases.flagship.name') })"
             loading="lazy"
             class="h-28 w-auto flex-shrink-0 rounded-lg border border-ink-600/60 object-cover"

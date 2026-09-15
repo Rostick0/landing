@@ -25,13 +25,16 @@ withDefaults(
         {{ url }}
       </span>
     </div>
+    <!-- width, not sizes: NuxtImg's `sizes` prop uses its own breakpoint:size
+    DSL, not CSS media-query syntax — a plain width here reliably requests a
+    1x/2x density srcset capped at the mockup's max rendered size. -->
     <NuxtImg
       :src="src"
       :alt="alt"
       :loading="eager ? 'eager' : 'lazy'"
       :fetchpriority="eager ? 'high' : undefined"
       class="block h-auto w-full"
-      sizes="(min-width: 1024px) 640px, 100vw"
+      width="640"
     />
   </div>
 </template>
