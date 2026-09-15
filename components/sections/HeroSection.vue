@@ -63,7 +63,7 @@ const stats = computed(() => [
           </div>
           <div class="absolute -bottom-10 -right-3 w-[150px] lg:-right-6 lg:w-[170px]">
             <PhoneMockup
-              src="/images/projects/my-financier-app/screenshot-1.png"
+              src="/images/projects/my-financier-app/screenshot-iphone.png"
               :alt="t('hero.mockup.appAlt')"
               eager
             />

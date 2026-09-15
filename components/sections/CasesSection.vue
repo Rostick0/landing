@@ -66,7 +66,7 @@ const galleryShots = computed(() => [
             url="my-financier.ru"
           />
           <div class="flex justify-center lg:justify-start">
-            <PhoneMockup :src="appProject.screenshots[0]" :alt="t('hero.mockup.appAlt')" :tilt="false" />
+            <PhoneMockup src="/images/projects/my-financier-app/screenshot-iphone.png" :alt="t('hero.mockup.appAlt')" :tilt="false" />
           </div>
         </div>
 
